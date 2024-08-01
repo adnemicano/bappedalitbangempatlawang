@@ -1,0 +1,50 @@
+<main>
+  <div class="position-relative">
+    <!-- Hero for FREE version -->
+    <section class="section section-lg section-hero section-shaped">
+      <!-- Background circles -->
+      <div class="banner">
+        <img src="assets/img/brand/bg-landing.png" alt="Banner Image">
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+  <h3>Layanan Bappeda Litbang</h3>
+  <div class="services">
+    <div class="service" *ngFor="let service of services">
+      <img [src]="service.img" alt="{{ service.name }}" />
+    </div>
+  </div>
+</div>
+
+<div class="bupati">
+  <img src="assets/img/brand/bupati.png" alt="Bupati" />
+</div>
+
+<div class="main-container">
+  <section class="header-section">
+    <h3>Paparan Bappeda Litbang Kabupaten Empat Lawang</h3>
+    <p>Informasi mengenai Litbang di Kabupaten Empat Lawang</p>
+    <div class="header-content"></div>
+  </section>
+
+  <section class="news-section">
+    <h3>Berita Terkini Bappeda Litbang</h3>
+    <p>Kegiatan & Event Terbaru yang dilakukan oleh Bappeda Litbang Kabupaten Empat Lawang</p>
+    <div class="news-cards">
+      <div class="news-card" *ngFor="let news of newsList">
+        <img [src]="news.image" alt="News Image" />
+        <div class="news-details">
+          <span class="news-category">Kegiatan & Event</span>
+          <h4>{{ news.title }}</h4>
+          <p>{{ news.date }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <app-sections></app-sections>
+  <router-outlet></router-outlet>
+
+</main>

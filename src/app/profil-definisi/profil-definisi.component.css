@@ -1,0 +1,141 @@
+.container {
+    padding: 0 100px;
+}
+
+.definisi {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.txt-def {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.definisi h1 {
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 100px;
+}
+
+.definisi p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.definisi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation for moving the cards up and down */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.card h2 {
+    color: #009345;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Mengatur gaya teks paragraf dalam .card */
+.card p {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Prinsip section styling */
+/* Prinsip section styling */
+.prinsip {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.judul-prinsip h2 {
+    font-size: 30px;
+    color: #009345;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.prinsip-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prinsip-item {
+    background-color: #f9f9f9;
+    border: 1px solid #009345;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Tambahkan transition untuk animasi */
+}
+
+.prinsip-item h3 {
+    font-size: 18px;
+    color: #009345;
+    margin-bottom: 0.5rem;
+}
+
+.prinsip-item p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.prinsip-item h4 {
+    font-size: 16px;
+    color: dimgrey;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Tambahkan efek hover */
+.prinsip-item:hover {
+    transform: scale(1.05);
+    /* Perbesar skala elemen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Tambahkan bayangan */
+}
