@@ -1,0 +1,26 @@
+.struktur {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.struktur h1 {
+    margin-top: 2rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.struktur .img-struktur {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.struktur .img-struktur img {
+    max-width: 100%;
+    height: auto;
+}
