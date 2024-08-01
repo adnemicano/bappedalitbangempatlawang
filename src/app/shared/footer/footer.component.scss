@@ -101,3 +101,60 @@ h4 {
     color: #ffffff;
     font-weight: 400;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .footer-middle {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-column ul li {
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        padding: 0 1rem; /* Add padding for left and right margin */
+    }
+}

@@ -23,22 +23,33 @@ body, html {
   margin-top: 4rem;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+
 .services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjust this value to increase or decrease the spacing */
   margin-bottom: 4rem;
-  gap: 10px;
 }
 
 .service {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
   padding: 6px;
-  width: 80px;
-  margin: 6px;
-  flex: 1 1 calc(25% - 20px);
+  width: 100%; /* Ensure the service item takes full width of the grid cell */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.service img {
+  max-width: 100%; /* Ensure the image does not overflow the service item */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .bupati {
@@ -140,7 +151,6 @@ body, html {
   font-size: 14px;
 }
 
-
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
   .section-hero {
@@ -149,7 +159,6 @@ body, html {
 }
 
 @media (max-width: 992px) {
-
   .section-hero {
     padding-top: 1.5rem;
   }
@@ -168,5 +177,20 @@ body, html {
 
   .banner img {
     margin-top: 3rem; /* Lower the banner image on mobile devices */
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* Stack services vertically */
+  }
+
+  .header-content,
+  .news-card {
+    width: 100%; /* Make header content and news cards full width */
+    margin: 10px 0; /* Add some vertical margin */
+  }
+
+  .news-cards {
+    flex-direction: column; /* Stack news cards vertically */
+    align-items: center; /* Center the news cards */
   }
 }

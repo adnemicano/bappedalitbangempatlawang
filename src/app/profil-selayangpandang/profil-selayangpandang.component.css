@@ -1,8 +1,13 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
 .selayang,
 .fungsi,
 .tabel {
     padding: 2rem 5%;
-    /* Adjusted padding for responsiveness */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -18,7 +23,7 @@
 .selayang p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #4b4b4b;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
@@ -35,20 +40,20 @@
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 48%;
     /* Adjusted width for responsiveness */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .fungsi-item p {
     font-size: 16px;
-    color: #333;
+    color: #4b4b4b;
     margin-bottom: 1rem;
 }
 
 .fungsi-item h4 {
     font-size: 16px;
-    color: dimgrey;
+    color: #4b4b4b;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -88,4 +93,55 @@
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #009345;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 4%;
+    }
+
+    .fungsi-item {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .selayang,
+    .fungsi,
+    .tabel {
+        padding: 1rem;
+    }
+
+    .selayang h1 {
+        margin-top: 2rem;
+        font-size: 24px;
+    }
+
+    .selayang p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .selayang p {
+        padding: 1rem;
+    }
+
+    .fungsi-item {
+        width: 100%;
+        /* Full width on mobile */
+        margin-bottom: 1rem;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 8px 10px;
+    }
 }

@@ -1,3 +1,9 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     padding: 0 100px;
 }
@@ -6,7 +12,6 @@
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .txt-def {
@@ -39,6 +44,8 @@
 .box {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    /* Allow wrapping */
     padding-top: 20px;
 }
 
@@ -81,7 +88,6 @@
 }
 
 /* Prinsip section styling */
-/* Prinsip section styling */
 .prinsip {
     padding: 2rem;
     max-width: 1200px;
@@ -110,7 +116,6 @@
     margin-bottom: 1rem;
     width: 48%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Tambahkan transition untuk animasi */
 }
 
 .prinsip-item h3 {
@@ -132,10 +137,71 @@
     text-align: center;
 }
 
-/* Tambahkan efek hover */
 .prinsip-item:hover {
     transform: scale(1.05);
-    /* Perbesar skala elemen */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Tambahkan bayangan */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 4%;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .prinsip-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .definisi {
+        padding: 1rem;
+    }
+
+    .definisi p {
+        padding: 1rem;
+    }
+
+    .prinsip {
+        padding: 1rem;
+    }
+
+    .judul-prinsip h2 {
+        font-size: 24px;
+    }
+
+    .prinsip-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .definisi h1 {
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+
+    .definisi p {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .prinsip-item {
+        width: 100%;
+    }
 }

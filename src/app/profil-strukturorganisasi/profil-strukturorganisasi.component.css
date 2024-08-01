@@ -24,3 +24,52 @@
     max-width: 100%;
     height: auto;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .struktur {
+        padding: 2rem 4%;
+        padding-top: 50px;
+    }
+
+    .struktur h1 {
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .struktur {
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+
+    .struktur h1 {
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+    }
+
+    .struktur .img-struktur {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .struktur {
+        padding: 1rem;
+        padding-top: 30px;
+    }
+
+    .struktur h1 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .struktur .img-struktur {
+        padding: 1rem 0;
+    }
+
+    .struktur .img-struktur img {
+        max-width: 100%;
+    }
+}
