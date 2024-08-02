@@ -1,0 +1,247 @@
+/* Styling for the search button */
+.search-button {
+    background-color: #28a745;
+    /* Green color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+/* Styling for the detail button */
+.detail-button {
+    background-color: #28a745;
+    /* Green color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+/* Other existing styles */
+.container {
+    padding: 0 100px;
+}
+
+.penelitian {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.penelitian h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+}
+
+.search-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    padding-right: 30px;
+    /* Space for the icon */
+    border: 1px solid #ccc;
+    /* Change border color */
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    border-color: #66afe9;
+    /* Change border color on focus */
+}
+
+.tabel-penelitian {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    display: block;
+}
+
+.tabel-penelitian thead tr {
+    background-color: #009345;
+    color: white;
+    text-align: center;
+}
+
+.tabel-penelitian th,
+.tabel-penelitian td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.tabel-penelitian tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabel-penelitian tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: #009345;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: #009345;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #87C139;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 4%;
+    }
+
+    .filter-options {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .search-field,
+    .form-field {
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex: 1 1 100%;
+    }
+
+    .tabel-penelitian {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2%;
+    }
+
+    .penelitian {
+        margin-top: 8rem;
+        padding: 1rem;
+    }
+
+    .filter-options {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pagination a {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1%;
+    }
+
+    .penelitian {
+        padding: 0.5rem;
+    }
+
+    .filter-options {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-button,
+    .detail-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .tabel-penelitian {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabel-penelitian th,
+    .tabel-penelitian td {
+        padding: 8px 10px;
+    }
+
+    .pagination a {
+        padding: 4px 8px;
+    }
+}

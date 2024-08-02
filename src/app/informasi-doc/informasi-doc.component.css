@@ -1,0 +1,231 @@
+.penelitian {
+    padding: -35rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.penelitian h1 {
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.tabel-penelitian {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+.tabel-penelitian thead tr {
+    background-color: #009345;
+    color: white;
+    text-align: center;
+}
+
+.tabel-penelitian th,
+.tabel-penelitian td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.tabel-penelitian tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabel-penelitian tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.detail-btn {
+    background-color: #009345;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.detail-btn a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.detail-btn:hover {
+    background-color: #87C139;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.pagination a {
+    color: #009345;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: #009345;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #87C139;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .filter-options {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .search-field,
+    .form-field {
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex: 1 1 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .tabel-penelitian {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2%;
+    }
+
+    .penelitian {
+        margin-top: 8rem;
+        padding: 1rem;
+    }
+
+    .filter-options {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pagination a {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1%;
+    }
+
+    .penelitian {
+        padding: 0.5rem;
+    }
+
+    .filter-options {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-button,
+    .detail-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .tabel-penelitian {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabel-penelitian th,
+    .tabel-penelitian td {
+        padding: 8px 10px;
+    }
+
+    .pagination a {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0 0.5%;
+    }
+
+    .penelitian {
+        padding: 0.2rem;
+    }
+
+    .filter-options {
+        padding: 3px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-button,
+    .detail-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .tabel-penelitian {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabel-penelitian th,
+    .tabel-penelitian td {
+        padding: 6px 8px;
+    }
+
+    .pagination a {
+        padding: 3px 6px;
+    }
+}

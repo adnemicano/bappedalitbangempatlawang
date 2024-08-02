@@ -18,7 +18,18 @@ import { LoginComponent } from './login/login.component';
 import { ProfilDefinisiComponent } from './profil-definisi/profil-definisi.component';
 import { ProfilSelayangpandangComponent } from './profil-selayangpandang/profil-selayangpandang.component';
 import { ProfilStrukturorganisasiComponent } from './profil-strukturorganisasi/profil-strukturorganisasi.component';
-import { ForumComponent } from './forum/forum.component';
+import { BeritaComponent } from './berita/berita.component';
+import { DetailBeritaComponent } from './detail-berita/detail-berita.component';
+import { InformasiRegulasiComponent } from './informasi-regulasi/informasi-regulasi.component';
+import { InformasiPendaftaranmerkComponent } from './informasi-pendaftaranmerk/informasi-pendaftaranmerk.component';
+import { LitbangInovasiComponent } from './litbang-inovasi/litbang-inovasi.component';
+import { LitbangPenelitianComponent } from './litbang-penelitian/litbang-penelitian.component';
+import { PenelitianComponent } from './penelitian/penelitian.component';
+import { MatCardModule } from '@angular/material/card';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { InformasiDatapenelitiComponent } from './informasi-datapeneliti/informasi-datapeneliti.component';
+import { InformasiHakiComponent } from './informasi-haki/informasi-haki.component';
+import { InformasiDocComponent } from './informasi-doc/informasi-doc.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +43,16 @@ import { ForumComponent } from './forum/forum.component';
     ProfilDefinisiComponent,
     ProfilSelayangpandangComponent,
     ProfilStrukturorganisasiComponent,
-    ForumComponent
+    BeritaComponent,
+    DetailBeritaComponent,
+    InformasiPendaftaranmerkComponent,
+    InformasiRegulasiComponent,
+    LitbangInovasiComponent,
+    LitbangPenelitianComponent,
+    PenelitianComponent,
+    InformasiDatapenelitiComponent,
+    InformasiHakiComponent,
+    InformasiDocComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +60,10 @@ import { ForumComponent } from './forum/forum.component';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    MatCardModule,
+    NgxPaginationModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

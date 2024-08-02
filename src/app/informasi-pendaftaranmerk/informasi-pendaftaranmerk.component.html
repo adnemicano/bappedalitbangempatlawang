@@ -1,0 +1,19 @@
+<mat-card>
+  <div class="title">
+    <h1>Pendaftaran Merk</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let regulasi of regulasis">
+        <h6>{{ regulasi.title }}</h6>
+        <mat-card class="card">
+          <mat-card-content class="card-content">
+            <div class="text-content">
+              <p>{{ regulasi.year }}</p>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</mat-card>

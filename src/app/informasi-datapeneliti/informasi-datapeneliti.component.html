@@ -1,0 +1,31 @@
+<div class="data-peneliti">
+  <h1>Data Peneliti</h1>
+  <div class="peneliti-cards">
+    <div class="peneliti-card" *ngFor="let peneliti of penelitis">
+      <img
+        [src]="peneliti.image"
+        alt="{{ peneliti.name }}"
+        class="peneliti-image"
+      />
+      <div class="peneliti-details">
+        <h3>{{ peneliti.name }}</h3>
+        <p><strong>NIP:</strong> {{ peneliti.nip }}</p>
+        <p><strong>Alumni:</strong> {{ peneliti.alumni }}</p>
+        <p><strong>Pekerjaan:</strong> {{ peneliti.pekerjaan }}</p>
+        <button class="btn">Guru Besar</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</div>

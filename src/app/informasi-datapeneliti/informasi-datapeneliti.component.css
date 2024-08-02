@@ -1,0 +1,251 @@
+.data-peneliti {
+  padding: 20px;
+  text-align: center;
+}
+
+.data-peneliti h1 {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 800;
+  margin-top: 8rem;
+}
+
+.peneliti-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.peneliti-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 45%;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.peneliti-image {
+  border-radius: 20px;
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.peneliti-details {
+  text-align: left;
+}
+
+.peneliti-details h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.peneliti-details p {
+  margin: 5px 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.peneliti-details p strong {
+  color: #333;
+}
+
+.peneliti-details .btn {
+  margin-top: 10px;
+  background-color: #fff;
+  color: #019345;
+  border-color: #87C139;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.pagination a {
+  color: #009345;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #009345;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #87C139;
+  color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 4%;
+  }
+
+  .peneliti-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 3%;
+  }
+
+  .peneliti-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peneliti-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .peneliti-details {
+    text-align: center;
+    width: 100%;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+
+  .pagination a {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2%;
+  }
+
+  .peneliti-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peneliti-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .peneliti-details {
+    text-align: center;
+    width: 100%;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+
+  .pagination a {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1%;
+  }
+
+  .peneliti-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peneliti-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .peneliti-details {
+    text-align: center;
+    width: 100%;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+
+  .pagination a {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .peneliti-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peneliti-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .peneliti-details {
+    text-align: center;
+    width: 100%;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+
+  .pagination a {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 0.5%;
+  }
+
+  .peneliti-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peneliti-image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .peneliti-details {
+    text-align: center;
+    width: 100%;
+  }
+
+  .peneliti-details .btn {
+    width: 100%;
+  }
+
+  .pagination a {
+    padding: 3px 6px;
+  }
+}

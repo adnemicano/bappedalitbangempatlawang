@@ -1,0 +1,13 @@
+<section class="news-section">
+    <h1>Berita</h1>
+    <div class="news-cards">
+      <div class="news-card" *ngFor="let news of newsList" [routerLink]="['/detail-berita']" role="button" (click)="closeDropdown()">
+        <img [src]="news.image" alt="News Image" />
+        <div class="news-details">
+          <span class="news-category">Kegiatan & Event</span>
+          <h4>{{ news.title }}</h4>
+          <p>{{ news.date }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

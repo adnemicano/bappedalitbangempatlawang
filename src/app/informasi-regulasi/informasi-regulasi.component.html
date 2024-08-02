@@ -1,0 +1,43 @@
+<mat-card>
+  <div class="title">
+    <h1>Regulasi</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-12"
+        *ngFor="
+          let regulasi of regulasis
+            | paginate : { itemsPerPage: 4, currentPage: p }
+        "
+      >
+        <mat-card class="card">
+          <mat-card-content class="card-content">
+            <img
+              [src]="regulasi.imageUrl"
+              alt="Regulasi Icon"
+              class="regulasi-image"
+            />
+            <div class="text-content">
+              <h4>{{ regulasi.title }}</h4>
+              <p>tahun {{ regulasi.year }}</p>
+              <button mat-button color="primary" class="button">
+                Lihat Regulasi
+              </button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+  </div>
+</mat-card>

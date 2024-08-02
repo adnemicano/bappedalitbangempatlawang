@@ -1,0 +1,108 @@
+<section class="penelitian container">
+    <div class="title">
+        <h1>Penelitian</h1>
+        <div class="filter-options">
+            <div class="form-field">
+                <label style="text-align: start; font-size: 23px; color: black;">Perangkat Daerah</label>
+                <select [(ngModel)]="selectedPerangkatDaerah" style="height: 40px; border-color: #ccc; border-radius: 4px;">
+                    <option *ngFor="let option of perangkatDaerahOptions" [value]="option">
+                        {{ option }}
+                    </option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label style="text-align: start; font-size: 23px; color: black;">Kategori</label>
+                <select [(ngModel)]="selectedKategori" style="height: 40px; border-color: #ccc; border-radius: 4px;">
+                    <option *ngFor="let option of kategoriOptions" [value]="option">
+                        {{ option }}
+                    </option>
+                </select>
+            </div>
+            <div class="form-field search-field">
+                <label style="text-align: start; font-size: 23px; color: black;">Temukan Penelitian</label>
+                <div class="input-container">
+                    <input type="text" [(ngModel)]="searchQuery" placeholder="Cari">
+                    <button type="button" class="search-button" (click)="search()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <table class="tabel-penelitian">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Judul Penelitian</th>
+                    <th>Tahun</th>
+                    <th>Kategori</th>
+                    <th>Instansi</th>
+                    <th>Tindak Lanjut</th>
+                    <th>Kata Kunci</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Rencana Aksi Satu Data Indonesia Kabupaten Empat Lawang Tahun 2023-2027</td>
+                    <td>2023</td>
+                    <td>Pembangunan Informasi dan Komunikasi Hukum</td>
+                    <td>BADAN PERENCANAAN PEMBANGUNAN DAERAH, PENELITIAN DAN PENGEMBANGAN</td>
+                    <td>Perwali</td>
+                    <td>data, hukum, satu data Indonesia</td>
+                    <td><button class="detail-button"[routerLink]="['/penelitian']">Detail</button></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Rencana Aksi Satu Data Indonesia Kabupaten Empat Lawang Tahun 2023-2027</td>
+                    <td>2023</td>
+                    <td>Pembangunan Informasi dan Komunikasi Hukum</td>
+                    <td>BADAN PERENCANAAN PEMBANGUNAN DAERAH, PENELITIAN DAN PENGEMBANGAN</td>
+                    <td>Perwali</td>
+                    <td>data, hukum, satu data Indonesia</td>
+                    <td><button class="detail-button" [routerLink]="['/penelitian']">Detail</button></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Rencana Aksi Satu Data Indonesia Kabupaten Empat Lawang Tahun 2023-2027</td>
+                    <td>2023</td>
+                    <td>Pembangunan Informasi dan Komunikasi Hukum</td>
+                    <td>BADAN PERENCANAAN PEMBANGUNAN DAERAH, PENELITIAN DAN PENGEMBANGAN</td>
+                    <td>Perwali</td>
+                    <td>data, hukum, satu data Indonesia</td>
+                    <td><button class="detail-button"[routerLink]="['/penelitian']">Detail</button></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Rencana Aksi Satu Data Indonesia Kabupaten Empat Lawang Tahun 2023-2027</td>
+                    <td>2023</td>
+                    <td>Pembangunan Informasi dan Komunikasi Hukum</td>
+                    <td>BADAN PERENCANAAN PEMBANGUNAN DAERAH, PENELITIAN DAN PENGEMBANGAN</td>
+                    <td>Perwali</td>
+                    <td>data, hukum, satu data Indonesia</td>
+                    <td><button class="detail-button" [routerLink]="['/penelitian']">Detail</button></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Rencana Aksi Satu Data Indonesia Kabupaten Empat Lawang Tahun 2023-2027</td>
+                    <td>2023</td>
+                    <td>Pembangunan Informasi dan Komunikasi Hukum</td>
+                    <td>BADAN PERENCANAAN PEMBANGUNAN DAERAH, PENELITIAN DAN PENGEMBANGAN</td>
+                    <td>Perwali</td>
+                    <td>data, hukum, satu data Indonesia</td>
+                    <td><button class="detail-button" [routerLink]="['/penelitian']">Detail</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+</section>

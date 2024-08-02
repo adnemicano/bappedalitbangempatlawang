@@ -1,0 +1,46 @@
+.container {
+    max-width: 1312px;
+    margin: 97px auto;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.image-container {
+    text-align: center;
+}
+.image-container img {
+    width: 1300px;
+    border-radius: 8px;
+    margin-top: 121px;
+}
+.content {
+    margin-top: 20px;
+}
+.content p {
+    margin-bottom: 10px;
+    width: 1300px;
+    font-size: 1rem;
+    color: black;
+}
+.btn-kembali {
+    background-color: #019345;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-kembali span {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.btn-kembali:hover {
+    background-color:#87C139;
+}
