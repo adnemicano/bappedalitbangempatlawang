@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfilDefinisiComponent } from './profil-definisi/profil-definisi.component';
 import { ProfilSelayangpandangComponent } from './profil-selayangpandang/profil-selayangpandang.component';
 import { ProfilStrukturorganisasiComponent } from './profil-strukturorganisasi/profil-strukturorganisasi.component';
+import { ForumComponent } from './forum/forum.component';
 
 const routes: Routes =[
     { path: 'home',             component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes =[
     { path: 'profil-definisi', component: ProfilDefinisiComponent},
     { path: 'profil-selayangpandang', component: ProfilSelayangpandangComponent},
     { path: 'profil-strukturorganisasi', component: ProfilStrukturorganisasiComponent},
+    { path: 'forum', component: ForumComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

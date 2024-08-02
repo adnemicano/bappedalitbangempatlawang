@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfilDefinisiComponent } from './profil-definisi/profil-definisi.component';
 import { ProfilSelayangpandangComponent } from './profil-selayangpandang/profil-selayangpandang.component';
 import { ProfilStrukturorganisasiComponent } from './profil-strukturorganisasi/profil-strukturorganisasi.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProfilStrukturorganisasiComponent } from './profil-strukturorganisasi/p
     LoginComponent,
     ProfilDefinisiComponent,
     ProfilSelayangpandangComponent,
-    ProfilStrukturorganisasiComponent
+    ProfilStrukturorganisasiComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
